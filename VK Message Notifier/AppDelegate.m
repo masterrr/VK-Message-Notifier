@@ -11,7 +11,7 @@
 
 // Create vk app here: http://vk.com/editapp?act=create
 
-const int client_id = 1234567; // your client_id app's code here
+const int client_id = 5201106; // your client_id app's code here
 
 @implementation AppDelegate
 
