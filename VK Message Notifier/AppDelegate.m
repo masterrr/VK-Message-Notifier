@@ -55,6 +55,7 @@ const int client_id = 5201106; // your client_id app's code here, 5201106 is sam
     _defaults = [NSUserDefaults standardUserDefaults];
     [_defaults setObject:[_vkAuth token] forKey:@"token"];
     [_defaults setObject:[_vkAuth uid] forKey:@"uid"];
+    [_defaults synchronize];
     [self startTimer]; // start timer, which will fired every (scheduledTimerWithTimeInterval) seconds and check user inbox
 }
 
