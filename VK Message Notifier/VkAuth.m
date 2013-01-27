@@ -16,14 +16,10 @@
         NSArray *urlcomponents = [url componentsSeparatedByString:@"="];
         _token = [[[urlcomponents objectAtIndex:1] componentsSeparatedByString:@"&"] objectAtIndex:0];
         _uid = [urlcomponents lastObject];
-        if ([_delegate respondsToSelector:@selector(didLogin)]) {
-            [_delegate didLogin];
-        } 
     } else {
-        if ([_delegate respondsToSelector:@selector(errorHandler)]) {
-            // TODO
-        }
+        
     }
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"auth_process_complete" object:NULL];
 }
 
 @end

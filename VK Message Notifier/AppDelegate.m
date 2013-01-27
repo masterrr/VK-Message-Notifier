@@ -16,6 +16,11 @@ const int client_id = 5201106; // your client_id app's code here, 5201106 is sam
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                          selector:@selector(didLogin)
+                                          name:@"auth_process_complete"
+                                          object:nil];
+    
     _men = [[Menu alloc] initTrayWithMenu:_trayMenu]; // Initializating (I've write custom init method) status bar icon w/ menu
     _vkAuth = [[VkAuth alloc] init];
     _defaults = [NSUserDefaults standardUserDefaults];
@@ -37,6 +42,7 @@ const int client_id = 5201106; // your client_id app's code here, 5201106 is sam
     }
 }
 
+
 // Generating authorization URL for _vkWebView (IBOutlet). [up]
 - (NSString *)generateLoginUrl {
     return [NSString stringWithFormat:@"http://api.vk.com/oauth/authorize?client_id=%d&scope=messages,offline&redirect_uri=http://api.vk.com/blank.html&display=touch&response_type=token", client_id];
@@ -44,6 +50,7 @@ const int client_id = 5201106; // your client_id app's code here, 5201106 is sam
 
 // Method called from VkAuth.h after authorization is done
 - (void)didLogin {
+    NSLog(@"didlogin");
     [_window close];
     _defaults = [NSUserDefaults standardUserDefaults];
     [_defaults setObject:[_vkAuth token] forKey:@"token"];
