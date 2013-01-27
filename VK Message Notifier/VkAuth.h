@@ -14,7 +14,7 @@
 
 @property (weak) NSString *token;
 @property (weak) NSString *uid;
-@property (strong) id delegate;
+@property (weak) id delegate;
 
 - (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame;
 
