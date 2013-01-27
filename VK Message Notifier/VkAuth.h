@@ -18,5 +18,4 @@
 
 - (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame;
 
-
 @end

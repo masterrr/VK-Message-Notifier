@@ -18,7 +18,7 @@ const int client_id = 5201106; // your client_id app's code here, 5201106 is sam
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     [[NSNotificationCenter defaultCenter] addObserver:self
                                           selector:@selector(didLogin)
-                                          name:@"auth_process_complete"
+                                          name:@"authProcessComplete"
                                           object:nil];
     
     _men = [[Menu alloc] initTrayWithMenu:_trayMenu]; // Initializating (I've write custom init method) status bar icon w/ menu
