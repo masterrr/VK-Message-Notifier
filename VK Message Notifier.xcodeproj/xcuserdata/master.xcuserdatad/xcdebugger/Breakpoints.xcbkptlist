@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "VK Message Notifier/VkAuth.m"
-         timestampString = "373640409.59443"
+         timestampString = "380995210.260033"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "19"
-         endingLineNumber = "19"
+         startingLineNumber = "17"
+         endingLineNumber = "17"
          landmarkName = "-webView:didFinishLoadForFrame:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -102,6 +102,19 @@
          endingLineNumber = "14"
          landmarkName = "-initTrayWithMenu:"
          landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "VK Message Notifier/VkAuth.m"
+         timestampString = "380995066.627376"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "31"
+         endingLineNumber = "31"
+         landmarkName = "@implementation VkAuth"
+         landmarkType = "3">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

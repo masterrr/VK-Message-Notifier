@@ -14,7 +14,6 @@
 		AF4BA14F1641A375001391BF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AF4BA14D1641A375001391BF /* Credits.rtf */; };
 		AF4BA1521641A375001391BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4BA1511641A375001391BF /* AppDelegate.m */; };
 		AF4BA1551641A375001391BF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF4BA1531641A375001391BF /* MainMenu.xib */; };
-		AF4BA15E1641A376001391BF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4BA13E1641A375001391BF /* Cocoa.framework */; };
 		AF4BA1741641A3C7001391BF /* Menu.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4BA1731641A3C7001391BF /* Menu.m */; };
 		AF4BA17C1641B788001391BF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4BA17A1641B76F001391BF /* WebKit.framework */; };
 		AF4BA1831641CB5C001391BF /* VkAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4BA1821641CB5C001391BF /* VkAuth.m */; };
@@ -32,16 +31,6 @@
 		AF7E74BF16B5850A008BA965 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7E74B316B58509008BA965 /* SBJsonWriter.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		AF4BA15F1641A376001391BF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AF4BA1311641A375001391BF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AF4BA1391641A375001391BF;
-			remoteInfo = "VK Message Notifier";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		AF021A7D1645C5FA00B4BFAB /* mail_2394.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = mail_2394.icns; sourceTree = "<group>"; };
 		AF4BA13A1641A375001391BF /* VK Message Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VK Message Notifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,7 +46,6 @@
 		AF4BA1501641A375001391BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF4BA1511641A375001391BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AF4BA1541641A375001391BF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		AF4BA15B1641A376001391BF /* VK Message NotifierTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VK Message NotifierTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4BA1721641A3C7001391BF /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
 		AF4BA1731641A3C7001391BF /* Menu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Menu.m; sourceTree = "<group>"; };
 		AF4BA17A1641B76F001391BF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -100,14 +88,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF4BA1571641A376001391BF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AF4BA15E1641A376001391BF /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -126,7 +106,6 @@
 			isa = PBXGroup;
 			children = (
 				AF4BA13A1641A375001391BF /* VK Message Notifier.app */,
-				AF4BA15B1641A376001391BF /* VK Message NotifierTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,25 +201,6 @@
 			productReference = AF4BA13A1641A375001391BF /* VK Message Notifier.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AF4BA15A1641A376001391BF /* VK Message NotifierTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AF4BA16F1641A376001391BF /* Build configuration list for PBXNativeTarget "VK Message NotifierTests" */;
-			buildPhases = (
-				AF4BA1561641A376001391BF /* Sources */,
-				AF4BA1571641A376001391BF /* Frameworks */,
-				AF4BA1581641A376001391BF /* Resources */,
-				AF4BA1591641A376001391BF /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AF4BA1601641A376001391BF /* PBXTargetDependency */,
-			);
-			name = "VK Message NotifierTests";
-			productName = "VK Message NotifierTests";
-			productReference = AF4BA15B1641A376001391BF /* VK Message NotifierTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -263,7 +223,6 @@
 			projectRoot = "";
 			targets = (
 				AF4BA1391641A375001391BF /* VK Message Notifier */,
-				AF4BA15A1641A376001391BF /* VK Message NotifierTests */,
 			);
 		};
 /* End PBXProject section */
@@ -280,30 +239,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF4BA1581641A376001391BF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		AF4BA1591641A376001391BF /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AF4BA1361641A375001391BF /* Sources */ = {
@@ -329,22 +265,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF4BA1561641A376001391BF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AF4BA1601641A376001391BF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AF4BA1391641A375001391BF /* VK Message Notifier */;
-			targetProxy = AF4BA15F1641A376001391BF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AF4BA1471641A375001391BF /* InfoPlist.strings */ = {
@@ -398,7 +319,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -422,7 +343,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -451,36 +372,6 @@
 			};
 			name = Release;
 		};
-		AF4BA1701641A376001391BF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VK Message Notifier.app/Contents/MacOS/VK Message Notifier";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VK Message Notifier/VK Message Notifier-Prefix.pch";
-				INFOPLIST_FILE = "VK Message NotifierTests/VK Message NotifierTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		AF4BA1711641A376001391BF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VK Message Notifier.app/Contents/MacOS/VK Message Notifier";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VK Message Notifier/VK Message Notifier-Prefix.pch";
-				INFOPLIST_FILE = "VK Message NotifierTests/VK Message NotifierTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -498,15 +389,6 @@
 			buildConfigurations = (
 				AF4BA16D1641A376001391BF /* Debug */,
 				AF4BA16E1641A376001391BF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AF4BA16F1641A376001391BF /* Build configuration list for PBXNativeTarget "VK Message NotifierTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AF4BA1701641A376001391BF /* Debug */,
-				AF4BA1711641A376001391BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
