@@ -76,6 +76,7 @@
 		AF7E74B116B58509008BA965 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonUTF8Stream.m; path = SBJson/SBJsonUTF8Stream.m; sourceTree = SOURCE_ROOT; };
 		AF7E74B216B58509008BA965 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBJsonWriter.h; path = SBJson/SBJsonWriter.h; sourceTree = SOURCE_ROOT; };
 		AF7E74B316B58509008BA965 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBJsonWriter.m; path = SBJson/SBJsonWriter.m; sourceTree = SOURCE_ROOT; };
+		AF7E74C016B587E9008BA965 /* authProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = authProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +138,7 @@
 				AF4BA1811641CB5C001391BF /* VkAuth.h */,
 				AF4BA1821641CB5C001391BF /* VkAuth.m */,
 				AF4BA1501641A375001391BF /* AppDelegate.h */,
+				AF7E74C016B587E9008BA965 /* authProtocol.h */,
 				AF4BA1511641A375001391BF /* AppDelegate.m */,
 				AF4BA1531641A375001391BF /* MainMenu.xib */,
 				AF4BA1451641A375001391BF /* Supporting Files */,

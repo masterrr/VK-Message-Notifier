@@ -11,7 +11,7 @@
 
 // Create vk app here: http://vk.com/editapp?act=create
 
-const int client_id = 5201106; // your client_id app's code here
+const int client_id = 5201106; // your client_id app's code here, 5201106 is sample
 
 @implementation AppDelegate
 
@@ -20,10 +20,13 @@ const int client_id = 5201106; // your client_id app's code here
     _vkAuth = [[VkAuth alloc] init];
     _defaults = [NSUserDefaults standardUserDefaults];
     if ([_defaults objectForKey:@"token"] && [_defaults objectForKey:@"uid"]) {
-        [_window close];
+        [_vkAuth setDelegate:self];
+        [_vkWebView setFrameLoadDelegate:_vkAuth];
+        [_vkWebView setMainFrameURL:[self generateLoginUrl]]; // Go to auth app page at the vk.com
+       /* [_window close];
         [_vkAuth setToken:[_defaults objectForKey:@"token"]];
         [_vkAuth setUid:[_defaults objectForKey:@"uid"]];
-        [self startTimer];
+        [self startTimer]; */
     } else {
         // Seeting (@property (strong) id delegate) for calling back (via loginProtocol) when authorisation is done
         [_vkAuth setDelegate:self];

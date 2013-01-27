@@ -11,8 +11,9 @@
 #import "Menu.h"
 #import "VkAuth.h"
 #import "SBJson.h"
+#import "authProtocol.h"
 
-@interface AppDelegate : NSObject <NSApplicationDelegate, loginProtocol>
+@interface AppDelegate : NSObject <NSApplicationDelegate, authProtocol>
 @property (weak) IBOutlet NSWindow *window;
 @property (weak) IBOutlet WebView *vkWebView;
 @property (strong) VkAuth *vkAuth;

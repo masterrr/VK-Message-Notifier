@@ -8,17 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <WebKit/WebKit.h>
-
-@protocol loginProtocol <NSObject>
-
-- (void)didLogin;
-
-@end
+#import "authProtocol.h"
 
 @interface VkAuth : NSObject
 
-@property (strong) NSString *token;
-@property (strong) NSString *uid;
+@property (weak) NSString *token;
+@property (weak) NSString *uid;
 @property (strong) id delegate;
 
 - (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame;
