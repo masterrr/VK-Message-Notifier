@@ -21,7 +21,6 @@
 @property (strong) NSString *uid;
 @property (strong) id delegate;
 
-
 - (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame;
 
 

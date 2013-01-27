@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 
+
+// Create vk app here: http://vk.com/editapp?act=create
+
+const int client_id = 1234567; // your client_id app's code here
+
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
@@ -31,7 +36,7 @@
 
 // Generating authorization URL for _vkWebView (IBOutlet). [up]
 - (NSString *)generateLoginUrl {
-    return [NSString stringWithFormat:@"http://api.vk.com/oauth/authorize?client_id=%d&scope=messages,offline&redirect_uri=http://api.vk.com/blank.html&display=touch&response_type=token", token];
+    return [NSString stringWithFormat:@"http://api.vk.com/oauth/authorize?client_id=%d&scope=messages,offline&redirect_uri=http://api.vk.com/blank.html&display=touch&response_type=token", client_id];
 }
 
 // Method called from VkAuth.h after authorization is done
@@ -55,6 +60,7 @@
 -(void)checkMessages {
     // Preparing string with future URL request. Filters — 1 makes clear to VK API that we want ONLY INBOX UNREAD messages
     NSString *reqURL = [[NSString alloc] initWithFormat:@"https://api.vk.com/method/messages.get?access_token=%@&filters=%@", [_vkAuth token], @"1"];
+    NSLog(@"%@", reqURL);
     // I'm using such cachePolicy for preventing program to cache API answers. If somebody will wipe this property/feautre off program will cache every API request to your HDD. or SSD :)
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:reqURL] cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:60.0];
     NSData *response = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
